@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>UI CSS Daily 1</title>
 </head>
 <body>
 
@@ -15,10 +15,13 @@
 
             <!--Search Bar Starts-->
             <form class="component_form" action="">
-                <div class="search_icon">
-                    <img src="imgs/search.svg" alt="Search Img">
+               
+                <div class="input_wrapper">
+                    <div class="search_icon">
+                        <img src="imgs/search.svg" alt="Search Img">
+                    </div>
+                    <input class="input_bar" type="text" placeholder="Start typing to search">
                 </div>
-                <input class="input_bar" type="text" placeholder="Start typing to search">
             </form>
             <!--Search Bar Ends-->
 
@@ -37,42 +40,67 @@
     <!--First Page-->
 
     <!--Second Page-->
-    <div class="component_filter_search">
-        <form action="">
-            <div class="input">
-                <div class="search_icon">
-                    <img src="imgs/search.svg" alt="Search Img">
+    <div style="width: 656px; margin: 25px;">
+        <div class="component_filter_search">
+            <form class="search_form" action="">
+                <div class="input_search">
+                    <div class="search_icon">
+                        <img src="imgs/search.svg" alt="Search Img">
+                    </div>
+                    <input class="input_bar" type="text" placeholder="Start typing to search">
                 </div>
-                <input class="input_bar" type="text" placeholder="Start typing to search">
-            </div>
-        </form>
-
-        <ul class="ul_radio">
-            <li>
-                <label>
-                    <input type="radio" name="type" value="project">
-                    <span class="text">Projects</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="type" value="image">
-                    <span class="text">Images</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="type" value="people">
-                    <span class="text">People</span>
-                </label>
-            </li>
-        </ul>
-
+            </form>
+    
+            <ul class="ul_radio">
+                <li>
+                    <input type="radio" class="button" id="Projects" name="type" value="projects"></input>
+                    <label for="Projects">Projects</label>
+                </li>
+                <li>
+                    <input type="radio" class="button" id="Images" name="type" value="images"></input>
+                    <label for="Images">Images</label>
+                </li>
+                <li>
+                    <input type="radio" class="button" id="People" name="type" value="people"></input>
+                    <label for="People">People</label>
+                </li>
+            </ul>
+    
+        </div>
     </div>
     <!--Second Page-->
 
     <!--Third Page-->
-    <div>
+    <div class="component_filter">
+        <form class="filter_form" action="">
+            <ul>
+                <li>
+                    <div class="key">Country</div>
+                    <div class="value">
+                        <select name="" id="">
+                            <option value="">Norway</option>
+                            <option value="">Turkey</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="key">City</div>
+                    <div class="value">
+                        <select name="" id="">
+                            <input type="text" value="Bergen">
+                        </select>
+                    </div>
+                </li>
+
+                <li class="filter-button">
+                    <a href="#">
+                        Cancel
+                    </a>
+                    <button type="submit">Apply Filters</button>
+                </li>
+            </ul>
+        </form>
+
 
     </div>
     <!--Third Page-->

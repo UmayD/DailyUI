@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap");
+body {
+  background-color: #E5E5E5;
+}
+
+.card_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card_wrapper .outer_card {
+  position: relative;
+  background-color: #1E1D4E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 24px;
+}
+
+.card_wrapper .outer_card .inner_card {
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 1017px;
+  height: 600px;
+  border-radius: 24px;
+}
+
+.main_title {
+  display: block;
+}
+
+.main_title .main_header {
+  text-align: center;
+  font-size: 24px;
+  color: #1E1D4E;
+  font-family: Merriweather;
+}
+
+.main_title .desc {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+.main_title .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_title .buttons .ul_radio {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  height: 32px;
+}
+
+.main_title .buttons .ul_radio li .bttn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F3F2FB;
+  border-radius: 20px;
+  padding-inline: 8px;
+}
+
+.main_title .buttons .ul_radio li .bttn label {
+  display: block;
+  color: #1E1D4E;
+  font-family: Poppins;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.main_title .buttons .ul_radio li .bttn input[type="radio"] {
+  display: none;
+}
+
+.personnel_cards .ul_people {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
+}
+
+.personnel_cards .ul_people .arrow_div {
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.personnel_cards .ul_people .people_form .ul_form {
+  list-style: none;
+}
+
+.personnel_cards .ul_people .people_form .ul_form .li_photo {
+  text-align: center;
+}
+
+.personnel_cards .ul_people .people_form .ul_form .li_name {
+  color: #1E1D4E;
+  font: bold;
+  font-family: Merriweather;
+  text-align: center;
+}
+
+.personnel_cards .ul_people .people_form .ul_form .li_job {
+  color: #1E1D4E;
+  font-family: Poppins;
+  text-align: center;
+}
+
+.personnel_cards .ul_people .people_form .ul_form .li_view_content {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
