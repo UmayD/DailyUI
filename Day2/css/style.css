@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Poppins&display=swap");
 body {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .card_wrapper {
@@ -17,7 +17,7 @@ body {
 
 .card_wrapper .outer_card {
   position: relative;
-  background-color: #1E1D4E;
+  background-color: #1e1d4e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,8 +31,17 @@ body {
 }
 
 .card_wrapper .outer_card .inner_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: absolute;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 1017px;
   height: 600px;
   border-radius: 24px;
@@ -45,8 +54,9 @@ body {
 .main_title .main_header {
   text-align: center;
   font-size: 24px;
-  color: #1E1D4E;
+  color: #1e1d4e;
   font-family: Merriweather;
+  font-weight: 900;
 }
 
 .main_title .desc {
@@ -98,14 +108,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #F3F2FB;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background-color: #f3f2fb;
   border-radius: 20px;
   padding-inline: 8px;
 }
 
 .main_title .buttons .ul_radio li .bttn label {
   display: block;
-  color: #1E1D4E;
+  color: #1e1d4e;
   font-family: Poppins;
   font-size: 16px;
   text-align: center;
@@ -148,6 +161,14 @@ body {
 
 .personnel_cards .ul_people .people_form .ul_form {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
 }
 
 .personnel_cards .ul_people .people_form .ul_form .li_photo {
@@ -155,19 +176,33 @@ body {
 }
 
 .personnel_cards .ul_people .people_form .ul_form .li_name {
-  color: #1E1D4E;
-  font: bold;
+  color: #1e1d4e;
   font-family: Merriweather;
+  font-weight: 900;
+  font-size: 18px;
   text-align: center;
 }
 
 .personnel_cards .ul_people .people_form .ul_form .li_job {
-  color: #1E1D4E;
+  color: #1e1d4e;
   font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
   text-align: center;
 }
 
 .personnel_cards .ul_people .people_form .ul_form .li_view_content {
   text-align: center;
+  border-radius: 29px;
+  font-size: 14;
+  font-family: Poppins;
+  padding-inline: 16px;
+  padding-block: 8px;
+  background-color: #1e1d4e;
+}
+
+.personnel_cards .ul_people .people_form .ul_form .li_view_content .li_view_content_button {
+  cursor: pointer;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
