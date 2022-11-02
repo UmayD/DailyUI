@@ -8,152 +8,157 @@ $button_view_content_text: #ffffff;
 $button_view_content_bg: #1e1d4e;
 
 body {
-  background-color: $background;
+    background-color: $background;
 }
 
 .card_wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .outer_card {
-    position: relative;
-    background-color: $button_text;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 24px;
+    align-items: center;
 
-    .inner_card {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      position: absolute;
-      background-color: $white_card;
-      width: 1017px;
-      height: 600px;
-      border-radius: 24px;
+    .outer_card {
+        position: relative;
+        background-color: $button_text;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 24px;
+
+        .inner_card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            position: absolute;
+            background-color: $white_card;
+            width: 1017px;
+            height: 600px;
+            border-radius: 24px;
+        }
     }
-  }
 }
 
 .main_title {
-  display: block;
+    display: block;
 
-  .main_header {
-    text-align: center;
-    font-size: 24px;
-    color: $button_text;
-    font-family: Merriweather;
-    font-weight: 900;
-  }
+    .main_header {
+        text-align: center;
+        font-size: 24px;
+        color: $button_text;
+        font-family: Merriweather;
+        font-weight: 900;
+    }
 
-  .desc {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Poppins;
-    font-size: 16px;
-  }
-
-  .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .ul_radio {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 16px;
-      height: 32px;
-
-      li .bttn {
+    .desc {
+        text-align: center;
         display: flex;
         justify-content: center;
-        align-items: stretch;
-        background-color: $button_background;
-        border-radius: 20px;
-        padding-inline: 8px;
-
-        label {
-          display: block;
-          color: $button_text;
-          font-family: Poppins;
-          font-size: 16px;
-          text-align: center;
-          cursor: pointer;
-          padding-left: 8px;
-        }
-
-        input[type="radio"] {
-          display: none;
-        }
-      }
+        align-items: center;
+        font-family: Poppins;
+        color: $button_text;
+        font-weight: 500;
+        font-size: 16px;
     }
-  }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .ul_radio {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            height: 32px;
+
+            li .bttn {
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                background-color: $button_background;
+                border-radius: 20px;
+                padding-inline: 8px;
+
+                label {
+                    display: block;
+                    color: $button_text;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    text-align: center;
+                    color: $button_text;
+                    font-weight: 500;
+                    cursor: pointer;
+                    padding-left: 8px;
+                }
+
+                input[type="radio"] {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 .personnel_cards {
-  .ul_people {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 24px;
-
-    .arrow_div {
-      width: 44px;
-      height: 44px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .people_form {
-      .ul_form {
+    .ul_people {
         list-style: none;
         display: flex;
-        flex-direction: column;
-        gap: 16px;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 24px;
 
-        .li_photo {
-          text-align: center;
+        .arrow_div {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .li_name {
-          color: $button_text;
-          font-family: Merriweather;
-          font-weight: 900;
-          font-size: 18px;
-          text-align: center;
-        }
+        .people_form {
+            .ul_form {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
 
-        .li_job {
-          color: $button_text;
-          font-family: Poppins;
-          font-weight: 400;
-          font-size: 14px;
-          text-align: center;
-        }
+                .li_photo {
+                    text-align: center;
+                }
 
-        .li_view_content {
-          text-align: center;
-          border-radius: 29px;
-          font-size: 14;
-          font-family: Poppins;
-          padding-inline: 16px;
-          padding-block: 8px;
-          background-color: $button_view_content_bg;
+                .li_name {
+                    color: $button_text;
+                    font-family: Merriweather;
+                    font-weight: 900;
+                    font-size: 18px;
+                    text-align: center;
+                }
 
-          .li_view_content_button {
-            cursor: pointer;
-            color: $button_view_content_text;
-          }
+                .li_job {
+                    color: $button_text;
+                    font-family: Poppins;
+                    font-weight: 400;
+                    font-size: 14px;
+                    text-align: center;
+                }
+
+                .li_view_content {
+                    text-align: center;
+                    border-radius: 29px;
+                    font-size: 14;
+                    font-family: Poppins;
+                    padding-inline: 16px;
+                    padding-block: 8px;
+                    color: $button_view_content_text;
+                    background-color: $button_view_content_bg;
+
+                    .view_content_text {
+                      color: $button_view_content_text;
+                      text-decoration: none;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }

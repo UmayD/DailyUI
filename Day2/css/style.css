@@ -71,6 +71,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: Poppins;
+  color: #1e1d4e;
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -122,6 +124,8 @@ body {
   font-family: Poppins;
   font-size: 16px;
   text-align: center;
+  color: #1e1d4e;
+  font-weight: 500;
   cursor: pointer;
   padding-left: 8px;
 }
@@ -198,11 +202,12 @@ body {
   font-family: Poppins;
   padding-inline: 16px;
   padding-block: 8px;
+  color: #ffffff;
   background-color: #1e1d4e;
 }
 
-.personnel_cards .ul_people .people_form .ul_form .li_view_content .li_view_content_button {
-  cursor: pointer;
+.personnel_cards .ul_people .people_form .ul_form .li_view_content .view_content_text {
   color: #ffffff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
