@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  background-color: #E8E8FD;
+}
+
+.card_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card_wrapper .orange_card {
+  width: 276px;
+  height: 1009px;
+  background-color: #EE4D38;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 46px;
+}
+
+.card_wrapper .orange_card .main_card {
+  width: 1319px;
+  height: 879px;
+  background-color: #FFFFFF;
+  position: absolute;
+  margin-left: 61px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.account_panel {
+  height: 879px;
+  width: 260px;
+  background-color: #F8F8FF;
+  border-radius: 32px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account_panel .account_panel_upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-inline: 16px;
+}
+
+.account_panel .account_panel_upper .account_detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+}
+
+.account_panel .account_panel_upper .account_detail .account_owner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.account_panel .account_panel_upper .account_detail .account_owner .text {
+  font-family: 'Poppins';
+  color: #62618F;
+}
+
+.account_panel .account_panel_upper .account_detail .account_owner .name {
+  font-weight: bold;
+  font-size: 16px;
+  color: #1A194D;
+}
+
+.account_panel .account_panel_upper .account_detail .account_owner .acc_id {
+  font-size: 14px;
+}
+
+.account_panel .account_panel_upper .ul_panel {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  margin-top: 48px;
+}
+
+.account_panel .account_panel_upper .ul_panel .ul_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  height: 48px;
+}
+
+.account_panel .account_panel_upper .ul_panel .ul_items .item_text {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: #62618F;
+}
+
+.account_panel .footer {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.account_panel .footer .footer_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account_panel .footer .footer_item .item_text {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: #62618F;
+}
+
+.main_panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 48px;
+  gap: 16px;
+}
+
+.main_panel .main_title .billing_title {
+  font-size: 32px;
+  font-family: "Poppins";
+  font-weight: 900;
+  color: #1A194D;
+}
+
+.main_panel .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.main_panel .description .desc_title {
+  color: #1A194D;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 800;
+}
+
+.main_panel .description .desc {
+  color: #62618F;
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.main_panel .order_table .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+}
+
+.main_panel .order_table .table .headers {
+  color: #62618F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 114px;
+  padding-inline: 16px;
+  padding-block: 8px;
+}
+
+.main_panel .order_table .table .rows {
+  color: #1A194D;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 114px;
+  padding-inline: 16px;
+  padding-block: 8px;
+}
+
+.main_panel .order_table .table .rows .row_text {
+  color: #1A194D;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.main_panel .order_table .table .rows .download {
+  text-decoration: none;
+  border: solid;
+  border-radius: 8px;
+  border-color: #CBCBD9;
+  padding-block: 8px;
+  cursor: pointer;
+}
+
+.main_panel .order_table .table .rows .download .download_text {
+  color: #1A194D;
+  padding-inline: 16px;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.main_panel .loadmore .loadmore_link {
+  color: #EE4D38;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.main_panel .payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_panel .payment .credit_card .ul_payment {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 16px;
+}
+
+.main_panel .payment .credit_card .ul_payment .ul_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_panel .payment .credit_card .ul_payment .ul_items .visa_icon {
+  border: solid;
+  border-radius: 8px;
+  border-color: #CBCBD9;
+  padding: 10px;
+}
+
+.main_panel .payment .credit_card .ul_payment .ul_items .visa_ending {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+  color: #1A194D;
+  width: 324px;
+}
+
+.main_panel .payment .credit_card .ul_payment .ul_items .remove_button {
+  color: #1A194D;
+  background-color: #FFFFFF;
+  padding-inline: 16px;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: bold;
+  border: solid;
+  border-radius: 8px;
+  border-color: #CBCBD9;
+  padding-block: 8px;
+  cursor: pointer;
+}
+
+.subscription_card {
+  width: 258px;
+  height: 221px;
+  background-color: #EE4D38;
+  border-radius: 16px;
+}
+
+.subscription_card .subs_plan .ul_subs {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+  margin: 32px;
+}
+
+.subscription_card .subs_plan .ul_subs .ul_items .text {
+  color: #FFFFFF;
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
+.subscription_card .subs_plan .ul_subs .ul_items .plan {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.subscription_card .subs_plan .ul_subs .ul_items .renew {
+  font-size: 14px;
+}
+
+.subscription_card .subs_plan .ul_subs .ul_items .cancel_subs {
+  text-decoration: none;
+  border: solid;
+  border-radius: 8px;
+  border-color: #CBCBD9;
+  padding-block: 8px;
+  padding-inline: 8px;
+  cursor: pointer;
+}
+
+.subscription_card .subs_plan .ul_subs .ul_items .cancel_subs .cancel_subs_text {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */

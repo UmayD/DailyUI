@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Day3 - Billing Page</title>
+</head>
+<body>
+
+    <div class="card_wrapper">
+        <div class="orange_card">
+            <div class="main_card">
+
+                <!--Account Panel-->
+                <div class="account_panel">
+
+                    <div class="account_panel_upper">
+                        <div class="account_detail">
+                            <img class="acc_photo" src="imgs/acc_photo.svg" alt="User Photo">
+                            <div class="account_owner">
+                                <span class="text name">Ildiko Gaspar</span>
+                                <span class="text acc_id">@igaspar</span>
+                            </div>
+                        </div>
+    
+                        <ul class="ul_panel">
+                            <li>
+                                <div class="ul_items">
+                                    <img class="icon" id="general_icon" src="imgs/icons/general.svg" alt="General"> <span class="item_text">General</span>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="ul_items">
+                                    <img class="icon" id="password_icon" src="imgs/icons/password.svg" alt="Password"> <span class="item_text">Password</span>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="ul_items">
+                                    <img class="icon" id="invitation_icon" src="imgs/icons/invitations.svg" alt="Invitations"> <span class="item_text">Invitations</span>
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div class="ul_items">
+                                    <img class="icon" id="billing_icon" src="imgs/icons/billing.svg" alt="Billing"> <span class="item_text">Billing</span>
+                                </div>
+                                
+                            </li>
+    
+                            <li>
+                                <div class="ul_items">
+                                    <img class="icon" id="apps_icon" src="imgs/icons/apps.svg" alt="Apps"> <span class="item_text">Apps</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <footer class="footer">
+                        <div class="footer_item">
+                            <img class="icon" id="logout_icon" src="imgs/icons/logout.svg" alt="General"> <span class="item_text">Log Out</span>
+                        </div>
+                    </footer>
+                </div>
+
+                <!--Main Panel-->
+                <div class="main_panel">
+                    <div class="main_title">
+                        <h1 class="billing_title">Billing</h1>
+                    </div>
+
+                    <div class="order_table">
+                        
+                        <div class="description">
+                            <span class="desc_title">Order History</span>
+                            <span class="desc">Manage billing information and view receipts</span>
+                        </div>
+
+                        <table class="table">
+                            <thead class="headers">
+                              <th>Date</th>
+                              <th>Type</th>
+                              <th>Receipt</th>
+                            </thead>
+
+                            <tr class="rows">
+                              <td><span class="row_text">Oct. 21, 2021</span></td>
+                              <td><span class="row_text">Pro Annual</span></td>
+                              <td><a class="download" href="#" download><span class="download_text">Download</span></a></td>
+                            </tr>
+
+                            <tr class="rows">
+                              <td><span class="row_text">Aug. 21, 2021</span></td>
+                              <td><span class="row_text">Pro Portfolio</span></td>
+                              <td><a class="download" href="#" download><span class="download_text">Download</span></a></td>
+                            </tr>
+
+                            <tr class="rows">
+                                <td><span class="row_text">July. 21, 2021</span></td>
+                                <td><span class="row_text">Sponsored Post</span></td>
+                                <td><a class="download" href="#" download><span class="download_text">Download</span></a></td>
+                            </tr>
+
+                            <tr class="rows">
+                                <td><span class="row_text">Jun. 21, 2021</span></td>
+                                <td><span class="row_text">Sponsored Post</span></td>
+                                <td><a class="download" href="#" download><span class="download_text">Download</span></a></td>
+                            </tr>
+                          </table>
+
+                          <div class="loadmore">
+                            <a class="loadmore_link" href="#"><span class="load_text">Load more</span></a>
+                        </div>
+                    </div>
+
+                    <div class="payment">
+                        <div class="description">
+                            <span class="desc_title">Payment Methods</span>
+                            <span class="desc">Manage billing information and view receipts</span>
+                        </div>
+
+                        <!--Credit Card-->
+                        <div class="credit_card">
+                            <ul class="ul_payment">
+                                <li class="ul_items">
+                                    <img class="visa_icon" src="imgs/icons/visa.svg" alt="Visa">
+                                </li>
+
+                                <li class="ul_items">
+                                    <span class="visa_ending">Visa ending in 2255</span>
+                                </li>
+
+                                <li class="ul_items">
+                                    <button class="remove_button" type="remove">Remove</button>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!--Subscription Card-->
+                <div class="subscription_card">
+                    <div class="subs_plan">
+                        <ul class="ul_subs">
+
+                            <li class="ul_items">
+                                <span class="text your_plan">Your Plan</span>
+                            </li>
+
+                            <li class="ul_items">
+                                <span class="text plan">Pro Annual</span> <br>
+                                <span class="text renew">Renews on Nov. 2021</span>
+                            </li>
+
+                            <li class="ul_items">
+                                <a class="cancel_subs" href="#"><span class="cancel_subs_text">Cancel subscription</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

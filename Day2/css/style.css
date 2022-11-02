@@ -47,11 +47,23 @@ body {
   border-radius: 24px;
 }
 
-.main_title {
+.inner_card_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 64px;
+  gap: 54px;
+}
+
+.inner_card_content .main_title {
   display: block;
 }
 
-.main_title .main_header {
+.inner_card_content .main_title .main_header {
   text-align: center;
   font-size: 24px;
   color: #1e1d4e;
@@ -59,7 +71,7 @@ body {
   font-weight: 900;
 }
 
-.main_title .desc {
+.inner_card_content .main_title .desc {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,7 +88,7 @@ body {
   font-size: 16px;
 }
 
-.main_title .buttons {
+.inner_card_content .main_title .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,8 +100,9 @@ body {
           align-items: center;
 }
 
-.main_title .buttons .ul_radio {
+.inner_card_content .main_title .buttons .ul_radio {
   list-style: none;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,7 +116,7 @@ body {
   height: 32px;
 }
 
-.main_title .buttons .ul_radio li .bttn {
+.inner_card_content .main_title .buttons .ul_radio li .bttn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,7 +131,7 @@ body {
   padding-inline: 8px;
 }
 
-.main_title .buttons .ul_radio li .bttn label {
+.inner_card_content .main_title .buttons .ul_radio li .bttn label {
   display: block;
   color: #1e1d4e;
   font-family: Poppins;
@@ -130,12 +143,13 @@ body {
   padding-left: 8px;
 }
 
-.main_title .buttons .ul_radio li .bttn input[type="radio"] {
+.inner_card_content .main_title .buttons .ul_radio li .bttn input[type="radio"] {
   display: none;
 }
 
-.personnel_cards .ul_people {
+.inner_card_content .personnel_cards .ul_people {
   list-style: none;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,7 +163,7 @@ body {
           column-gap: 24px;
 }
 
-.personnel_cards .ul_people .arrow_div {
+.inner_card_content .personnel_cards .ul_people .arrow_div {
   width: 44px;
   height: 44px;
   display: -webkit-box;
@@ -163,8 +177,9 @@ body {
           align-items: center;
 }
 
-.personnel_cards .ul_people .people_form .ul_form {
+.inner_card_content .personnel_cards .ul_people .people_form .ul_form {
   list-style: none;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,11 +190,11 @@ body {
   gap: 16px;
 }
 
-.personnel_cards .ul_people .people_form .ul_form .li_photo {
+.inner_card_content .personnel_cards .ul_people .people_form .ul_form .li_photo {
   text-align: center;
 }
 
-.personnel_cards .ul_people .people_form .ul_form .li_name {
+.inner_card_content .personnel_cards .ul_people .people_form .ul_form .li_name {
   color: #1e1d4e;
   font-family: Merriweather;
   font-weight: 900;
@@ -187,7 +202,7 @@ body {
   text-align: center;
 }
 
-.personnel_cards .ul_people .people_form .ul_form .li_job {
+.inner_card_content .personnel_cards .ul_people .people_form .ul_form .li_job {
   color: #1e1d4e;
   font-family: Poppins;
   font-weight: 400;
@@ -195,7 +210,7 @@ body {
   text-align: center;
 }
 
-.personnel_cards .ul_people .people_form .ul_form .li_view_content {
+.inner_card_content .personnel_cards .ul_people .people_form .ul_form .li_view_content {
   text-align: center;
   border-radius: 29px;
   font-size: 14;
@@ -206,7 +221,7 @@ body {
   background-color: #1e1d4e;
 }
 
-.personnel_cards .ul_people .people_form .ul_form .li_view_content .view_content_text {
+.inner_card_content .personnel_cards .ul_people .people_form .ul_form .li_view_content .view_content_text {
   color: #ffffff;
   text-decoration: none;
 }

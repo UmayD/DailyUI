@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$body: #E8E8FD;
+$orange_bg: #EE4D38;
+$white_bg: #FFFFFF;
+$account_bg: #F8F8FF;
+$name_colour: #1A194D;
+$text_colour: #62618F;
+$border_colour: #CBCBD9;
+$loadmore: #EE6338;
+
+body{
+    background-color: $body;
+}
+
+.card_wrapper {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .orange_card {
+        width: 276px;
+        height: 1009px;
+        background-color: $orange_bg;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-radius: 46px;
+
+        .main_card {
+            width: 1319px;
+            height: 879px;
+            background-color: $white_bg;
+            position: absolute;
+            margin-left: 61px;
+            border-radius: 30px;
+
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+        }
+    }
+    
+    
+}
+
+.account_panel {
+    height: 879px;
+    width: 260px;
+    background-color: $account_bg;
+    border-radius: 32px;
+
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+
+    .account_panel_upper {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-inline: 16px;
+
+        .account_detail {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            gap: 14px;
+    
+            .account_owner {
+                display: flex;
+                flex-direction: column;
+
+                .text{
+                    font-family: 'Poppins';
+                    color: $text_colour;
+                }
+
+                .name {
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: $name_colour;
+                }
+
+                .acc_id {
+                    font-size: 14px;
+                }
+            }
+        }
+    
+        .ul_panel {
+            list-style: none;
+            padding: 0;
+    
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 48px;
+    
+            .ul_items {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+                height: 48px;
+    
+                .item_text {
+                    font-family: "Poppins";
+                    font-size: 14px;
+                    color: $text_colour;
+                }
+            }
+        }
+    }   
+
+    .footer {
+        display: grid;
+        align-items: end;
+
+        .footer_item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .item_text {
+                font-family: "Poppins";
+                font-size: 14px;
+                color: $text_colour;
+            }
+        }
+    }
+}
+
+.main_panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 48px;
+    gap: 16px;
+
+    .main_title {
+        .billing_title {
+            font-size: 32px;
+            font-family: "Poppins";
+            font-weight: 900;
+            color: $name_colour;
+        }
+    }
+
+    .description {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-bottom: 32px;
+
+        .desc_title {
+            color: $name_colour;
+            font-size: 16px;
+            font-family: "Poppins";
+            font-weight: 800;
+        }
+
+        .desc {
+            color: $text_colour;
+            font-size: 14px;
+            font-family: "Poppins";
+            font-weight: 500;
+        }
+    }
+
+    .order_table {
+
+        .table {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            .headers {
+                color: $text_colour;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 114px;
+                padding-inline: 16px;
+                padding-block: 8px;
+    
+            }
+            
+            .rows {
+                color: $name_colour;
+                display: grid;
+                grid-auto-flow: column;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 114px;
+                padding-inline: 16px;
+                padding-block: 8px;
+
+                .row_text {
+                    color: $name_colour;
+                    font-size: 16px;
+                    font-family: "Poppins";
+                    font-weight: bold;
+                }
+
+                .download {
+                    text-decoration: none;
+                    border: solid;
+                    border-radius: 8px;
+                    border-color: $border_colour;
+                    padding-block: 8px;
+                    cursor: pointer;
+
+                    .download_text {
+                        color: $name_colour;
+                        padding-inline: 16px;
+                        font-size: 16px;
+                        font-family: "Poppins";
+                        font-weight: bold;
+                    }
+                }
+            }
+        }        
+    }
+
+    .loadmore {
+        .loadmore_link {
+            color: $orange_bg;
+            cursor: pointer;
+            font-family: "Poppins";
+            font-weight: 600;
+        }
+    }
+
+    .payment {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .credit_card {
+
+            .ul_payment {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                gap: 16px;
+
+                .ul_items {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .visa_icon {
+                        border: solid;
+                        border-radius: 8px;
+                        border-color: $border_colour;
+                        padding: 10px;
+                    }
+    
+                    .visa_ending{
+                        font-family: "Poppins";
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: $name_colour;
+                        width: 324px;
+                    }
+
+                    .remove_button {
+                        color: $name_colour;
+                        background-color: $white_bg;
+                        padding-inline: 16px;
+                        font-size: 16px;
+                        font-family: "Poppins";
+                        font-weight: bold;
+                        border: solid;
+                        border-radius: 8px;
+                        border-color: $border_colour;
+                        padding-block: 8px;
+                        cursor: pointer;
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
+
+.subscription_card {
+    width: 258px;
+    height: 221px;
+    background-color: $orange_bg;
+    border-radius: 16px;
+
+    .subs_plan {
+        
+        .ul_subs {
+            list-style: none;
+            padding: 0;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 16px;
+            margin: 32px;
+
+            .ul_items {
+
+                .text {
+                    color: $white_bg;
+                    font-family: "Poppins";
+                    font-size: 16px;
+                }
+
+                .plan {
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+
+                .renew {
+                    font-size: 14px;
+                }
+
+                .cancel_subs {
+                    text-decoration: none;
+                    border: solid;
+                    border-radius: 8px;
+                    border-color: $border_colour;
+                    padding-block: 8px;
+                    padding-inline: 8px;
+                    cursor: pointer;
+
+                    .cancel_subs_text {
+                        text-decoration: none;
+                        color: $white_bg;
+                        font-size: 16px;
+                        font-family: "Poppins";
+                        font-weight: 500;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
