@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card_wrapper">
+        <div class="outer_card">
+            <div class="inner_card">
+                <div class="close_page">
+                    <a class="close_page_button" href="#"><img src="imgs/close_button.svg" alt="Close page"></a>
+                </div>
+                
+                <div class="content">
+
+                    <div class="rating">
+                        <span class="rating_title">Overall rating</span>
+                        
+                        <div class="rating_container">
+                            <div class="star_container">
+                                <img class="star star1" src="imgs/star.svg" alt="1">
+                                <img class="star star2" src="imgs/star.svg" alt="2">
+                                <img class="star star3" src="imgs/star.svg" alt="3">
+                                <img class="star star4" src="imgs/star.svg" alt="4">
+                                <img class="star star5" src="imgs/star_empty.svg" alt="5">
+                            </div>
+
+                            <span class="rating_description">Click to rate</span>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <span class="review_title">Review Title</span>
+
+                        <div class="review_container">
+                            <input type="text" name="review" id="review_input" placeholder="Example: Easy to use">
+                        </div>
+                    </div>
+
+                    <div class="recommend">
+                        <span class="recommend_title">Would you recommend this product to a friend?</span>
+
+                        <div class="recommend_buttons">
+
+                            <ul class="ul_buttons">
+                                <li class="li_buttons">
+                                    <input type="radio" class="button" id="yes" name="type" value="yes"></input>
+                                    <label for="yes">Yes</label>
+                                </li>
+                                <li class="li_buttons">
+                                    <input type="radio" class="button" id="no" name="type" value="no"></input>
+                                    <label for="no">No</label>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+
+                    <div class="product_review">
+                        <span class="product_review_title">Product review</span>
+
+                        <div class="product_review_container">
+                            <input type="text" name="product_review" id="product_review_input" placeholder="Example: Since I bought this a month ago, it has been used a lot. What I like best/what is worst about this product is ...">
+                        </div>
+                    </div>
+
+                    <div class="user_info">
+
+                        <div class="user_name">
+                            <span class="user_name_title">Product review</span>
+
+                            <div class="user_name_container">
+                                <input type="text" name="user_name" id="user_name_input" placeholder="Example: bob27">
+                            </div>
+                        </div>
+
+                        <div class="user_mail">
+                            <span class="user_mail_title">Product review</span>
+
+                            <div class="user_mail_container">
+                                <input type="text" name="user_mail" id="user_mail_input" placeholder="Example: your@email.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="consent">
+                        <input type="radio" class="button" id="consent" name="type" value="consent"></input>
+                        <label for="consent"><span class="consent_text">I accept the <span class="consent_text terms_text">terms and conditions</span></span></label>
+                    </div>
+
+                    <div class="mail_consent">
+                        <p class="mail_consent_text">You will be able to receive emails in connection with this review (eg if others comment on your review). 
+                            All emails contain the option to unsubscribe. 
+                            We can use the text and star rating from your review in other marketing.</p>
+                    </div>
+
+                    <div class="submit_button">
+                        <input type="submit" value="Submit product review"></input>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

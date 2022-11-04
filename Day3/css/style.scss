@@ -1,24 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-$body: #E8E8FD;
-$orange_bg: #EE4D38;
-$white_bg: #FFFFFF;
-$account_bg: #F8F8FF;
-$name_colour: #1A194D;
-$text_colour: #62618F;
-$border_colour: #CBCBD9;
-$loadmore: #EE6338;
+$body: #e8e8fd;
+$orange_bg: #ee4d38;
+$white_bg: #ffffff;
+$account_bg: #f8f8ff;
+$name_colour: #1a194d;
+$text_colour: #62618f;
+$border_colour: #cbcbd9;
+$loadmore: #ee6338;
 
-body{
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+    list-style: none;
+}
+
+body {
     background-color: $body;
 }
 
 .card_wrapper {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     .orange_card {
         width: 276px;
         height: 1009px;
@@ -41,8 +44,6 @@ body{
             align-content: center;
         }
     }
-    
-    
 }
 
 .account_panel {
@@ -53,30 +54,28 @@ body{
 
     display: grid;
     justify-content: stretch;
-    align-items: center;
+    align-items: flex-start;
 
     .account_panel_upper {
-
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-
         margin-inline: 16px;
 
         .account_detail {
+            margin-top: 58px;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-    
+
             gap: 14px;
-    
+
             .account_owner {
                 display: flex;
                 flex-direction: column;
 
-                .text{
-                    font-family: 'Poppins';
+                .text {
+                    font-family: "Poppins";
                     color: $text_colour;
                 }
 
@@ -91,23 +90,24 @@ body{
                 }
             }
         }
-    
+
         .ul_panel {
             list-style: none;
             padding: 0;
-    
+
             display: flex;
             flex-direction: column;
+            justify-content: flex-start;
             gap: 8px;
-            margin-top: 48px;
-    
+            margin-top: 40px;
+            width: 174px;
+
             .ul_items {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
                 gap: 10px;
-                height: 48px;
-    
+
                 .item_text {
                     font-family: "Poppins";
                     font-size: 14px;
@@ -115,11 +115,12 @@ body{
                 }
             }
         }
-    }   
+    }
 
     .footer {
-        display: grid;
-        align-items: end;
+        position: absolute;
+        bottom: 70px;
+        margin-left: 16px;
 
         .footer_item {
             display: flex;
@@ -135,200 +136,197 @@ body{
     }
 }
 
-.main_panel{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 48px;
+.billing_title {
+    font-size: 32px;
+    font-family: "Poppins";
+    font-weight: 900;
+    color: $name_colour;
+    margin-top: 70px;
+    margin-bottom: 49px;
+}
+
+.main_panel {
     gap: 16px;
+    margin-left: 56px;
 
-    .main_title {
-        .billing_title {
-            font-size: 32px;
-            font-family: "Poppins";
-            font-weight: 900;
-            color: $name_colour;
-        }
-    }
-
-    .description {
+    .main_panel_content {
         display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        margin-bottom: 32px;
-
-        .desc_title {
-            color: $name_colour;
-            font-size: 16px;
-            font-family: "Poppins";
-            font-weight: 800;
-        }
-
-        .desc {
-            color: $text_colour;
-            font-size: 14px;
-            font-family: "Poppins";
-            font-weight: 500;
-        }
-    }
-
-    .order_table {
-
-        .table {
+        .main_panel_orders {
             display: flex;
             flex-direction: column;
-            gap: 4px;
-
-            .headers {
-                color: $text_colour;
+            margin-right: 67px;
+            .description {
                 display: flex;
-                align-items: center;
                 justify-content: flex-start;
-                gap: 114px;
-                padding-inline: 16px;
-                padding-block: 8px;
-    
-            }
-            
-            .rows {
-                color: $name_colour;
-                display: grid;
-                grid-auto-flow: column;
-                align-items: center;
-                justify-content: flex-start;
-                gap: 114px;
-                padding-inline: 16px;
-                padding-block: 8px;
+                flex-direction: column;
+                margin-bottom: 50px;
 
-                .row_text {
+                .desc_title {
                     color: $name_colour;
                     font-size: 16px;
                     font-family: "Poppins";
-                    font-weight: bold;
+                    font-weight: 800;
+                    margin-bottom: 14px;
                 }
 
-                .download {
-                    text-decoration: none;
-                    border: solid;
-                    border-radius: 8px;
-                    border-color: $border_colour;
-                    padding-block: 8px;
-                    cursor: pointer;
-
-                    .download_text {
-                        color: $name_colour;
-                        padding-inline: 16px;
-                        font-size: 16px;
-                        font-family: "Poppins";
-                        font-weight: bold;
-                    }
+                .desc {
+                    color: $text_colour;
+                    font-size: 14px;
+                    font-family: "Poppins";
+                    font-weight: 500;
                 }
             }
-        }        
-    }
 
-    .loadmore {
-        .loadmore_link {
-            color: $orange_bg;
-            cursor: pointer;
-            font-family: "Poppins";
-            font-weight: 600;
-        }
-    }
-
-    .payment {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        .credit_card {
-
-            .ul_payment {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                gap: 16px;
-
-                .ul_items {
+            .order_table {
+                .table {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    flex-direction: column;
+                    gap: 4px;
 
-                    .visa_icon {
-                        border: solid;
-                        border-radius: 8px;
-                        border-color: $border_colour;
-                        padding: 10px;
-                    }
-    
-                    .visa_ending{
-                        font-family: "Poppins";
-                        font-size: 16px;
-                        font-weight: 600;
-                        color: $name_colour;
-                        width: 324px;
+                    .headers {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .header_text {
+                            font-family: "Poppins";
+                            font-size: 14px;
+                            color: $text_colour;
+                            width: 150px;
+                            text-align: start;
+                        }
                     }
 
-                    .remove_button {
+                    .rows {
                         color: $name_colour;
-                        background-color: $white_bg;
-                        padding-inline: 16px;
-                        font-size: 16px;
-                        font-family: "Poppins";
-                        font-weight: bold;
-                        border: solid;
-                        border-radius: 8px;
-                        border-color: $border_colour;
-                        padding-block: 8px;
-                        cursor: pointer;
+                        display: grid;
+                        grid-auto-flow: column;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 114px;
+                        padding-block: 16px;
+
+                        .row_text {
+                            color: $name_colour;
+                            font-size: 16px;
+                            font-family: "Poppins";
+                            font-weight: bold;
+                            display: inline-block;
+                            width: 150px;
+                        }
+
+                        .download {
+                            text-decoration: none;
+                            border: solid;
+                            border-radius: 8px;
+                            border-color: $border_colour;
+                            padding-block: 8px;
+                            cursor: pointer;
+
+                            .download_text {
+                                color: $name_colour;
+                                padding-inline: 16px;
+                                font-size: 16px;
+                                font-family: "Poppins";
+                                font-weight: bold;
+                            }
+                        }
                     }
                 }
 
-                
+                .loadmore {
+                    .loadmore_link {
+                        color: $orange_bg;
+                        cursor: pointer;
+                        font-family: "Poppins";
+                        font-weight: 600;
+                    }
+                    margin-top: 16px;
+                    margin-bottom: 105px;
+                }
+    
+                .payment {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+    
+                    .credit_card {
+                        .ul_payment {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+    
+                            display: flex;
+                            justify-content: flex-start;
+                            align-content: center;
+                            gap: 16px;
+    
+                            .ul_items {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+    
+                                .visa_icon {
+                                    border: solid;
+                                    border-radius: 8px;
+                                    border-color: $border_colour;
+                                    padding: 10px;
+                                }
+    
+                                .visa_ending {
+                                    font-family: "Poppins";
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    color: $name_colour;
+                                    width: 420px;
+                                }
+    
+                                .remove_button {
+                                    color: $name_colour;
+                                    background-color: $white_bg;
+                                    padding-inline: 16px;
+                                    font-size: 16px;
+                                    font-family: "Poppins";
+                                    font-weight: bold;
+                                    border: solid;
+                                    border-radius: 8px;
+                                    border-color: $border_colour;
+                                    padding-block: 8px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
-    }
-}
 
-.subscription_card {
-    width: 258px;
-    height: 221px;
-    background-color: $orange_bg;
-    border-radius: 16px;
+        .subscription_card {
+            width: 258px;
+            height: 221px;
+            background-color: $orange_bg;
+            border-radius: 16px;
 
-    .subs_plan {
-        
-        .ul_subs {
-            list-style: none;
-            padding: 0;
-
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            gap: 16px;
-            margin: 32px;
-
-            .ul_items {
+            .subs_plan {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 16px;
+                margin: 32px;
 
                 .text {
                     color: $white_bg;
                     font-family: "Poppins";
                     font-size: 16px;
-                }
 
-                .plan {
-                    font-weight: bold;
-                    font-size: 24px;
-                }
-
-                .renew {
-                    font-size: 14px;
+                    .plan {
+                        font-weight: bold;
+                        font-size: 24px;
+                    }
+    
+                    .renew {
+                        font-size: 14px;
+                    }
                 }
 
                 .cancel_subs {
@@ -346,7 +344,6 @@ body{
                         font-size: 16px;
                         font-family: "Poppins";
                         font-weight: 500;
-                        
                     }
                 }
             }
