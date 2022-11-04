@@ -14,7 +14,7 @@
                 <div class="close_page">
                     <a class="close_page_button" href="#"><img src="imgs/close_button.svg" alt="Close page"></a>
                 </div>
-                
+
                 <div class="content">
 
                     <div class="rating">
@@ -36,9 +36,7 @@
                     <div class="review">
                         <span class="review_title">Review Title</span>
 
-                        <div class="review_container">
-                            <input type="text" name="review" id="review_input" placeholder="Example: Easy to use">
-                        </div>
+                        <input type="text" name="review" id="review_input" placeholder="Example: Easy to use">
                     </div>
 
                     <div class="recommend">
@@ -63,27 +61,23 @@
                     <div class="product_review">
                         <span class="product_review_title">Product review</span>
 
-                        <div class="product_review_container">
-                            <input type="text" name="product_review" id="product_review_input" placeholder="Example: Since I bought this a month ago, it has been used a lot. What I like best/what is worst about this product is ...">
-                        </div>
+                        <textarea 
+                            name="product_review" 
+                            class="product_review_textarea" 
+                            placeholder="Example: Since I bought this a month ago, it has been used a lot. What I like best/what is worst about this product is ..."
+                        ></textarea>
+
                     </div>
 
                     <div class="user_info">
-
-                        <div class="user_name">
-                            <span class="user_name_title">Product review</span>
-
-                            <div class="user_name_container">
-                                <input type="text" name="user_name" id="user_name_input" placeholder="Example: bob27">
-                            </div>
+                        <div class="form_item">
+                            <label for="user_name" class="form_input_label">Nickname</label>
+                            <input type="text" name="user_name" class="form_input" id="user_name" placeholder="Example: bob27">
                         </div>
 
-                        <div class="user_mail">
-                            <span class="user_mail_title">Product review</span>
-
-                            <div class="user_mail_container">
-                                <input type="text" name="user_mail" id="user_mail_input" placeholder="Example: your@email.com">
-                            </div>
+                        <div class="form_item">
+                            <label for="user_email" class="form_input_label">Email address (will not be published)</label>
+                            <input type="email" name="user_email" class="form_input" id="form_email" placeholder="Example: your@email.com">
                         </div>
                     </div>
 

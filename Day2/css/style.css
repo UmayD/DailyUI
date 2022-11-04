@@ -100,7 +100,7 @@ body {
           align-items: center;
 }
 
-.inner_card_content .main_title .buttons .ul_radio {
+.inner_card_content .main_title .buttons .subscriptions_links {
   list-style: none;
   padding: 0;
   display: -webkit-box;
@@ -116,7 +116,7 @@ body {
   height: 32px;
 }
 
-.inner_card_content .main_title .buttons .ul_radio li .bttn {
+.inner_card_content .main_title .buttons .subscriptions_links .subscription_buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,7 +131,7 @@ body {
   padding-inline: 8px;
 }
 
-.inner_card_content .main_title .buttons .ul_radio li .bttn label {
+.inner_card_content .main_title .buttons .subscriptions_links .subscription_buttons .button_text {
   display: block;
   color: #1e1d4e;
   font-family: Poppins;
@@ -141,10 +141,6 @@ body {
   font-weight: 500;
   cursor: pointer;
   padding-left: 8px;
-}
-
-.inner_card_content .main_title .buttons .ul_radio li .bttn input[type="radio"] {
-  display: none;
 }
 
 .inner_card_content .personnel_cards .ul_people {

@@ -45,7 +45,7 @@ body {
 
     .main_title {
         display: block;
-    
+
         .main_header {
             text-align: center;
             font-size: 24px;
@@ -53,7 +53,7 @@ body {
             font-family: Merriweather;
             font-weight: 900;
         }
-    
+
         .desc {
             text-align: center;
             display: flex;
@@ -64,13 +64,13 @@ body {
             font-weight: 500;
             font-size: 16px;
         }
-    
+
         .buttons {
             display: flex;
             justify-content: center;
             align-items: center;
-    
-            .ul_radio {
+
+            .subscriptions_links {
                 list-style: none;
                 padding: 0;
                 display: flex;
@@ -78,16 +78,16 @@ body {
                 align-items: center;
                 gap: 16px;
                 height: 32px;
-    
-                li .bttn {
+
+                .subscription_buttons {
                     display: flex;
                     justify-content: center;
                     align-items: stretch;
                     background-color: $button_background;
                     border-radius: 20px;
                     padding-inline: 8px;
-    
-                    label {
+
+                    .button_text {
                         display: block;
                         color: $button_text;
                         font-family: Poppins;
@@ -97,10 +97,6 @@ body {
                         font-weight: 500;
                         cursor: pointer;
                         padding-left: 8px;
-                    }
-    
-                    input[type="radio"] {
-                        display: none;
                     }
                 }
             }
@@ -115,7 +111,7 @@ body {
             justify-content: space-between;
             align-items: center;
             column-gap: 24px;
-    
+
             .arrow_div {
                 width: 44px;
                 height: 44px;
@@ -123,7 +119,7 @@ body {
                 justify-content: center;
                 align-items: center;
             }
-    
+
             .people_form {
                 .ul_form {
                     list-style: none;
@@ -131,11 +127,11 @@ body {
                     display: flex;
                     flex-direction: column;
                     gap: 16px;
-    
+
                     .li_photo {
                         text-align: center;
                     }
-    
+
                     .li_name {
                         color: $button_text;
                         font-family: Merriweather;
@@ -143,7 +139,7 @@ body {
                         font-size: 18px;
                         text-align: center;
                     }
-    
+
                     .li_job {
                         color: $button_text;
                         font-family: Poppins;
@@ -151,7 +147,7 @@ body {
                         font-size: 14px;
                         text-align: center;
                     }
-    
+
                     .li_view_content {
                         text-align: center;
                         border-radius: 29px;
@@ -161,10 +157,10 @@ body {
                         padding-block: 8px;
                         color: $button_view_content_text;
                         background-color: $button_view_content_bg;
-    
+
                         .view_content_text {
-                          color: $button_view_content_text;
-                          text-decoration: none;
+                            color: $button_view_content_text;
+                            text-decoration: none;
                         }
                     }
                 }

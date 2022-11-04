@@ -17,14 +17,18 @@ $loadmore: #ee6338;
     list-style: none;
 }
 
-body {
-    background-color: $body;
-}
-
 .card_wrapper {
+    width: 1600px;
+    height: 1200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $body;
+
     .orange_card {
         width: 276px;
         height: 1009px;
+        margin-left: 50px;
         background-color: $orange_bg;
         position: relative;
         display: flex;
@@ -98,7 +102,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            gap: 8px;
+            gap: 40px;
             margin-top: 40px;
             width: 174px;
 
@@ -120,7 +124,7 @@ body {
     .footer {
         position: absolute;
         bottom: 70px;
-        margin-left: 16px;
+        margin-left: 40px;
 
         .footer_item {
             display: flex;
@@ -179,31 +183,21 @@ body {
 
             .order_table {
                 .table {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 4px;
+                    width: 100%;
+                    font-family: "Poppins";
 
                     .headers {
-                        display: flex;
-                        justify-content: space-between;
-
-                        .header_text {
-                            font-family: "Poppins";
-                            font-size: 14px;
-                            color: $text_colour;
-                            width: 150px;
-                            text-align: start;
-                        }
+                        font-size: 14px;
+                        color: $text_colour;
+                        text-align: left;
                     }
 
                     .rows {
                         color: $name_colour;
-                        display: grid;
-                        grid-auto-flow: column;
-                        align-items: center;
-                        justify-content: flex-start;
-                        gap: 114px;
-                        padding-block: 16px;
+
+                        td {
+                            padding-block: 30px;
+                        }
 
                         .row_text {
                             color: $name_colour;
@@ -211,7 +205,6 @@ body {
                             font-family: "Poppins";
                             font-weight: bold;
                             display: inline-block;
-                            width: 150px;
                         }
 
                         .download {
@@ -241,37 +234,36 @@ body {
                         font-weight: 600;
                     }
                     margin-top: 16px;
-                    margin-bottom: 105px;
+                    margin-bottom: 40px;
                 }
-    
+
                 .payment {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-    
+
                     .credit_card {
                         .ul_payment {
                             list-style: none;
                             padding: 0;
                             margin: 0;
-    
+
                             display: flex;
                             justify-content: flex-start;
                             align-content: center;
-                            gap: 16px;
-    
+
                             .ul_items {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-    
+
                                 .visa_icon {
                                     border: solid;
                                     border-radius: 8px;
                                     border-color: $border_colour;
                                     padding: 10px;
                                 }
-    
+
                                 .visa_ending {
                                     font-family: "Poppins";
                                     font-size: 16px;
@@ -279,7 +271,7 @@ body {
                                     color: $name_colour;
                                     width: 420px;
                                 }
-    
+
                                 .remove_button {
                                     color: $name_colour;
                                     background-color: $white_bg;
@@ -323,7 +315,7 @@ body {
                         font-weight: bold;
                         font-size: 24px;
                     }
-    
+
                     .renew {
                         font-size: 14px;
                     }

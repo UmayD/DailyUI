@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  outline: 0;
   line-height: 1;
   list-style: none;
 }
@@ -19,12 +20,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .card_wrapper .outer_card {
   position: relative;
-  background-color: #FDD4D4;
+  background-color: #fdd4d4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +51,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: absolute;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 658px;
   height: 991px;
   border-radius: 40px;
@@ -137,41 +138,14 @@
   font-weight: 600;
 }
 
-.content .review .review_container {
-  outline: solid 2px;
-  outline-color: #EEF2FF;
+.content .review #review_input {
+  border: 2px solid #eef2ff;
   border-radius: 6px;
-}
-
-.content .review .review_container ::-webkit-input-placeholder {
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .review .review_container :-ms-input-placeholder {
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .review .review_container ::-ms-input-placeholder {
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .review .review_container ::placeholder {
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .review .review_container #review_input {
-  padding: 16px;
-  outline-color: #EEF2FF;
-  border-radius: 6px;
-}
-
-.content .review .review_container #review_input:focus {
-  outline-color: #EEF2FF;
   width: 100%;
+  font-size: 16px;
+  font-family: "Poppins";
+  height: 56px;
+  text-indent: 16px;
 }
 
 .content .recommend {
@@ -227,44 +201,30 @@
   font-weight: 600;
 }
 
-.content .product_review .product_review_container {
-  height: 80px;
-  outline: solid 2px;
-  outline-color: #EEF2FF;
+.content .product_review .product_review_textarea {
+  border: 2px solid #eef2ff;
   border-radius: 6px;
-}
-
-.content .product_review .product_review_container ::-webkit-input-placeholder {
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .product_review .product_review_container :-ms-input-placeholder {
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .product_review .product_review_container ::-ms-input-placeholder {
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .product_review .product_review_container ::placeholder {
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .product_review .product_review_container #product_review_input {
-  padding: 16px;
-  outline-color: #EEF2FF;
-  border-radius: 6px;
-  resize: both;
   width: 100%;
+  font-size: 16px;
+  font-family: "Poppins";
+  resize: none;
+  padding-block: 16px;
 }
 
-.content .product_review .product_review_container #product_review_input:focus {
-  outline-color: #EEF2FF;
-  width: 100%;
+.content .product_review .product_review_textarea::-webkit-input-placeholder {
+  padding-inline: 16px;
+}
+
+.content .product_review .product_review_textarea:-ms-input-placeholder {
+  padding-inline: 16px;
+}
+
+.content .product_review .product_review_textarea::-ms-input-placeholder {
+  padding-inline: 16px;
+}
+
+.content .product_review .product_review_textarea::placeholder {
+  padding-inline: 16px;
 }
 
 .content .user_info {
@@ -275,110 +235,28 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 9px;
+  width: 100%;
 }
 
-.content .user_info .user_name .user_name_title {
+.content .user_info .form_item {
+  width: 100%;
+}
+
+.content .user_info .form_item .form_input_label {
   font-family: "Poppins";
   font-size: 14px;
   color: #121633;
   font-weight: 600;
 }
 
-.content .user_info .user_name .user_name_container {
-  outline: solid 2px;
-  outline-color: #EEF2FF;
+.content .user_info .form_item .form_input {
+  border: 2px solid #eef2ff;
   border-radius: 6px;
-}
-
-.content .user_info .user_name .user_name_container ::-webkit-input-placeholder {
-  font-family: "Poppins";
+  width: 100%;
   font-size: 16px;
-}
-
-.content .user_info .user_name .user_name_container :-ms-input-placeholder {
   font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .user_info .user_name .user_name_container ::-ms-input-placeholder {
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .user_info .user_name .user_name_container ::placeholder {
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .user_info .user_name .user_name_container #user_name_input {
-  padding: 16px;
-  outline-color: #EEF2FF;
-  border-radius: 6px;
-  resize: both;
-}
-
-.content .user_info .user_name .user_name_container #user_name_input:focus {
-  outline-color: #EEF2FF;
-}
-
-.content .user_info .user_mail .user_mail_title {
-  font-family: "Poppins";
-  font-size: 14px;
-  color: #121633;
-  font-weight: 600;
-}
-
-.content .user_info .user_mail .user_mail_container {
-  outline: solid 2px;
-  outline-color: #EEF2FF;
-  border-radius: 6px;
-}
-
-.content .user_info .user_mail .user_mail_container ::-webkit-input-placeholder {
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .user_info .user_mail .user_mail_container :-ms-input-placeholder {
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .user_info .user_mail .user_mail_container ::-ms-input-placeholder {
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .user_info .user_mail .user_mail_container ::placeholder {
-  font-family: "Poppins";
-  font-size: 16px;
-}
-
-.content .user_info .user_mail .user_mail_container #user_mail_input {
-  padding: 16px;
-  outline-color: #EEF2FF;
-  border-radius: 6px;
-  resize: both;
-}
-
-.content .user_info .user_mail .user_mail_container #user_mail_input:focus {
-  outline-color: #EEF2FF;
-}
-
-.content .user_info .user_mail .user_mail_container #user_mail_input:focus::-webkit-input-placeholder {
-  height: auto;
-}
-
-.content .user_info .user_mail .user_mail_container #user_mail_input:focus:-ms-input-placeholder {
-  height: auto;
-}
-
-.content .user_info .user_mail .user_mail_container #user_mail_input:focus::-ms-input-placeholder {
-  height: auto;
-}
-
-.content .user_info .user_mail .user_mail_container #user_mail_input:focus::placeholder {
-  height: auto;
+  height: 56px;
+  text-indent: 16px;
 }
 
 .content .consent {
@@ -408,7 +286,7 @@
 
 .content .submit_button input[type="submit"] {
   background-color: #121633;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 4px;
   cursor: pointer;
   padding: 16px;

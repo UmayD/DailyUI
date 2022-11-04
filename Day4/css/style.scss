@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Poppins&display=swap");
 
-$body: #E5E5E5;
-$outer_card_bg: #FDD4D4;
-$white_card: #FFFFFF;
+$body: #e5e5e5;
+$outer_card_bg: #fdd4d4;
+$white_card: #ffffff;
 $text_colour: #121633;
-$border_colour: #EEF2FF;
+$border_colour: #eef2ff;
 
 * {
     margin: 0;
     padding: 0;
     border: 0;
+    outline: 0;
     line-height: 1;
     list-style: none;
 }
@@ -100,33 +101,18 @@ $border_colour: #EEF2FF;
             font-weight: 600;
         }
 
-        .review_container {
-
-            outline: solid 2px;
-            outline-color: $border_colour;
+        #review_input {
+            border: 2px solid $border_colour;
             border-radius: 6px;
-
-            ::placeholder {
-                font-family: "Poppins";
-                font-size: 16px;
-            }
-            
-            #review_input {
-                padding: 16px;
-                outline-color: $border_colour;
-                border-radius: 6px;
-
-                &:focus {
-                    outline-color: $border_colour;
-                    width: 100%;
-                }
-            }
-
+            width: 100%;
+            font-size: 16px;
+            font-family: "Poppins";
+            height: 56px;
+            text-indent: 16px;
         }
     }
 
     .recommend {
-
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -142,7 +128,7 @@ $border_colour: #EEF2FF;
             .ul_buttons {
                 display: flex;
                 gap: 24px;
-                
+
                 .li_buttons {
                     display: flex;
                     gap: 8px;
@@ -166,29 +152,17 @@ $border_colour: #EEF2FF;
             font-weight: 600;
         }
 
-        .product_review_container {
-
-            height: 80px;
-            outline: solid 2px;
-            outline-color: $border_colour;
+        .product_review_textarea {
+            border: 2px solid $border_colour;
             border-radius: 6px;
+            width: 100%;
+            font-size: 16px;
+            font-family: "Poppins";
+            resize: none;
+            padding-block: 16px;
 
-            ::placeholder {
-                font-family: "Poppins";
-                font-size: 16px;
-            }
-            
-            #product_review_input {
-                padding: 16px;
-                outline-color: $border_colour;
-                border-radius: 6px;
-                resize: both;
-                width: 100%;
-
-                &:focus {
-                    outline-color: $border_colour;
-                    width: 100%;
-                }
+            &::placeholder {
+                padding-inline: 16px;
             }
         }
     }
@@ -197,72 +171,24 @@ $border_colour: #EEF2FF;
         display: flex;
         justify-content: flex-start;
         gap: 9px;
+        width: 100%;
 
-        .user_name {
-            .user_name_title {
+        .form_item {
+            width: 100%;
+            .form_input_label {
                 font-family: "Poppins";
                 font-size: 14px;
                 color: $text_colour;
                 font-weight: 600;
             }
-    
-            .user_name_container {
-                
-                outline: solid 2px;
-                outline-color: $border_colour;
+            .form_input {
+                border: 2px solid $border_colour;
                 border-radius: 6px;
-
-                ::placeholder {
-                    font-family: "Poppins";
-                    font-size: 16px;
-                }
-                
-                #user_name_input {
-                    padding: 16px;
-                    outline-color: $border_colour;
-                    border-radius: 6px;
-                    resize: both;
-    
-                    &:focus {
-                        outline-color: $border_colour;
-                    }
-                }
-            }
-        }
-
-        .user_mail {
-            .user_mail_title {
+                width: 100%;
+                font-size: 16px;
                 font-family: "Poppins";
-                font-size: 14px;
-                color: $text_colour;
-                font-weight: 600;
-            }
-    
-            .user_mail_container {
-
-                outline: solid 2px;
-                outline-color: $border_colour;
-                border-radius: 6px;
-    
-                ::placeholder {
-                    font-family: "Poppins";
-                    font-size: 16px;
-                }
-                
-                #user_mail_input {
-                    padding: 16px;
-                    outline-color: $border_colour;
-                    border-radius: 6px;
-                    resize: both;
-    
-                    &:focus {
-                        outline-color: $border_colour;
-                        
-                        &::placeholder {
-                            height: auto;
-                        }
-                    }
-                }
+                height: 56px;
+                text-indent: 16px;
             }
         }
     }
@@ -293,7 +219,6 @@ $border_colour: #EEF2FF;
     }
 
     .submit_button {
-
         input[type="submit"] {
             background-color: $text_colour;
             color: $white_card;

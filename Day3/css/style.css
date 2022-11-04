@@ -7,13 +7,25 @@
   list-style: none;
 }
 
-body {
+.card_wrapper {
+  width: 1600px;
+  height: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #e8e8fd;
 }
 
 .card_wrapper .orange_card {
   width: 276px;
   height: 1009px;
+  margin-left: 50px;
   background-color: #ee4d38;
   position: relative;
   display: -webkit-box;
@@ -123,7 +135,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 8px;
+  gap: 40px;
   margin-top: 40px;
   width: 174px;
 }
@@ -150,7 +162,7 @@ body {
 .account_panel .footer {
   position: absolute;
   bottom: 70px;
-  margin-left: 16px;
+  margin-left: 40px;
 }
 
 .account_panel .footer .footer_item {
@@ -232,46 +244,22 @@ body {
 }
 
 .main_panel .main_panel_content .main_panel_orders .order_table .table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 4px;
+  width: 100%;
+  font-family: "Poppins";
 }
 
 .main_panel .main_panel_content .main_panel_orders .order_table .table .headers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.main_panel .main_panel_content .main_panel_orders .order_table .table .headers .header_text {
-  font-family: "Poppins";
   font-size: 14px;
   color: #62618f;
-  width: 150px;
-  text-align: start;
+  text-align: left;
 }
 
 .main_panel .main_panel_content .main_panel_orders .order_table .table .rows {
   color: #1a194d;
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 114px;
-  padding-block: 16px;
+}
+
+.main_panel .main_panel_content .main_panel_orders .order_table .table .rows td {
+  padding-block: 30px;
 }
 
 .main_panel .main_panel_content .main_panel_orders .order_table .table .rows .row_text {
@@ -280,7 +268,6 @@ body {
   font-family: "Poppins";
   font-weight: bold;
   display: inline-block;
-  width: 150px;
 }
 
 .main_panel .main_panel_content .main_panel_orders .order_table .table .rows .download {
@@ -302,7 +289,7 @@ body {
 
 .main_panel .main_panel_content .main_panel_orders .order_table .loadmore {
   margin-top: 16px;
-  margin-bottom: 105px;
+  margin-bottom: 40px;
 }
 
 .main_panel .main_panel_content .main_panel_orders .order_table .loadmore .loadmore_link {
@@ -337,7 +324,6 @@ body {
           justify-content: flex-start;
   -ms-flex-line-pack: center;
       align-content: center;
-  gap: 16px;
 }
 
 .main_panel .main_panel_content .main_panel_orders .order_table .payment .credit_card .ul_payment .ul_items {
