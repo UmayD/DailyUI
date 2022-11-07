@@ -10,3 +10,6 @@ Daily Front-end development challenge from [UI Desing Daily](https://uidesigndai
 
 ### DAY 4
 ![ss_day4](https://user-images.githubusercontent.com/44316108/200032741-e06d6b85-3f13-4ef1-9ac5-8e849a40440c.PNG)
+
+### DAY 5
+![ss_day5](https://user-images.githubusercontent.com/44316108/200314427-721f3879-c798-4a2f-a351-7f76773de32b.PNG)
