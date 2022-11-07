@@ -28,11 +28,6 @@ body {
           align-items: center;
 }
 
-.card_wrapper .circles {
-  background-color: #E5E7F0;
-  position: absolute;
-}
-
 .card_wrapper .main_card {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -28,11 +28,6 @@ body {
     justify-content: center;
     align-items: center;
 
-    .circles {
-        background-color: $circle_colour;
-        position: absolute;
-    }
-
     .main_card {
         display: flex;
         flex-direction: column;
