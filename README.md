@@ -1,6 +1,6 @@
 # DailyUI
 
-Daily Front-end development challenge from [UI Desing Daily](https://uidesigndaily.com). Let's see where it goes.
+Daily Front-end development challenge from [UI Design Daily](https://uidesigndaily.com). Let's see where it goes.
 
 ### DAY 1
 ![ss_day1](https://user-images.githubusercontent.com/44316108/200117960-dcdd34fc-a64b-41f2-bcb8-6c5674949e1c.PNG)
